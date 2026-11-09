@@ -1,0 +1,16 @@
+[package]
+name = "black-matter"
+description = "Black Matter: a learning-project AI coding harness built on Infinity"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[[bin]]
+name = "black-matter"
+path = "src/main.rs"
+
+[dependencies]
+infinity-agent-core.workspace = true
+infinity-provider-bedrock.workspace = true
+tokio.workspace = true

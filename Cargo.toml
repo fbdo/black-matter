@@ -1,0 +1,18 @@
+[workspace]
+members = ["crates/black-matter"]
+resolver = "3"
+
+# Shared package metadata. Member crates opt in with `field.workspace = true`.
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+license = "Apache-2.0"
+repository = "https://github.com/fbdo/black-matter"
+
+# Infinity is used as a git dependency, pinned to one exact commit so builds
+# are reproducible.
+# Infinity rev e1a3e4b36e5f6143e03a59a7ad86e1abacfd22e8, committed 2026-11-05.
+[workspace.dependencies]
+infinity-agent-core = { git = "https://github.com/hydro-project/infinity", rev = "e1a3e4b36e5f6143e03a59a7ad86e1abacfd22e8" }
+infinity-provider-bedrock = { git = "https://github.com/hydro-project/infinity", rev = "e1a3e4b36e5f6143e03a59a7ad86e1abacfd22e8" }
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
