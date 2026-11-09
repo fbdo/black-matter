@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "distribution": "jcode",
+  "productName": "jcode",
+  "configNextStep": "open jcode in this project, run `jcode trust grant` once, then run `/aidlc --doctor`",
+  "name": "jcode",
+  "harnessDir": ".jcode",
+  "rulesSubdir": "rules",
+  "runnerFrontmatterAdditions": [
+    "disable-model-invocation: true"
+  ]
+}

@@ -22,3 +22,30 @@ rustc-ice-*.txt
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+
+# BEGIN AI-DLC:gitignore
+# AI-DLC: local working files
+aidlc/active-space
+aidlc/.aidlc-active-space-*.tmp
+aidlc/active-memory/
+aidlc/spaces/*/intents/active-intent
+aidlc/.aidlc-clone-id
+aidlc.settings.local.json
+aidlc/.aidlc-unit-scope.json
+aidlc/.aidlc-unit-parked
+aidlc/.aidlc-claim-generations.json
+aidlc/.aidlc-unit-participant
+aidlc/.aidlc-claim-registry.json
+aidlc/.aidlc-unit-releases/
+aidlc/.aidlc-unit-merges/
+aidlc/.aidlc-sessions/
+aidlc/.aidlc-request-text/
+aidlc/spaces/*/intents/.aidlc-*
+**/aidlc/spaces/*/intents/**/.aidlc-engine/
+**/aidlc/spaces/*/intents/**/.aidlc-sensors/
+aidlc/spaces/*/knowledge/documentkb/.journal/
+aidlc/spaces/*/knowledge/.sources.local.json
+aidlc/spaces/*/intents/*/runtime-graph.json
+aidlc/spaces/*/intents/*/.aidlc-*
+aidlc/diagnostics/
+# END AI-DLC:gitignore

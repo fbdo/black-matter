@@ -1,0 +1,16 @@
+# AI-DLC hooks for jcode. jcode reads only this [hooks] table from a project
+# config and runs it after `jcode trust grant` (review with `jcode trust show`).
+# Editing this table asks for approval again.
+[hooks]
+session_start = "aidlc engine adapter jcode session-start"
+session_end = "aidlc engine adapter jcode session-end"
+user_prompt_submit = "aidlc engine adapter jcode record-human-turn"
+user_prompt_submit_timeout_ms = 30000
+pre_tool = "aidlc engine adapter jcode guard-tool-call"
+pre_tool_timeout_ms = 120000
+post_tool_feedback = "aidlc engine adapter jcode post-tool"
+post_tool_feedback_timeout_ms = 120000
+stop = "aidlc engine adapter jcode continue-workflow"
+stop_timeout_ms = 120000
+swarm_member_start = "aidlc engine adapter jcode log-subagent"
+swarm_member_end = "aidlc engine adapter jcode log-subagent"
