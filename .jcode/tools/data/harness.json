@@ -8,5 +8,13 @@
   "rulesSubdir": "rules",
   "runnerFrontmatterAdditions": [
     "disable-model-invocation: true"
-  ]
+  ],
+  "newChatStep": {
+    "text": "open a new chat, then type <entry>"
+  },
+  "hostShell": {
+    "env": [
+      "JCODE_SESSION_ID"
+    ]
+  }
 }
