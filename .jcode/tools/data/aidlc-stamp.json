@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "frameworkVersion": "2.11.3-preview.20261105.1",
+  "frameworkVersion": "2.11.4-preview.20261110.1",
   "distribution": "jcode",
   "harnessDir": ".jcode"
 }
